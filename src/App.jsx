@@ -22,7 +22,7 @@ import ScrollToTop from "./components/layout/ScrollToTop";
 function App() {
   return (
     <ContentProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
         <div className="min-h-screen bg-slate-900 text-white">
           <Routes>
